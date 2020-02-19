@@ -18,4 +18,13 @@ public class Stock {static String [] [] leStock = {
 		 }
 		 out.println("</table> </form>");
 		 }
+		 public static void show(String id,PrintWriter out) {
+			 for(int i = 0; i< leStock.length; i++) {
+				 if(id.equals(leStock[i][2])){
+					 out.println( "<tr> <td>" + leStock[i][0] + " " + leStock[i][1] + " Euros </td></tr>");
+
+				 }
+
+			 }
+		 }
 }
